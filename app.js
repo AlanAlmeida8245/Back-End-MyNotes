@@ -9,6 +9,7 @@ app.use(express.json())
 
 app.get("/", (req, res) => {
     res.send("olá")
+    res.write("olá")
 })
 
 
