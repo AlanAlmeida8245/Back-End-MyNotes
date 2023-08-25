@@ -12,7 +12,6 @@ app.get("/", (req, res) => {
     res.write("olá")
 })
 
-
 app.post("/criar", (req, res) => {
     const newPost = new Notas({
         titulo: req.body.titulo,
