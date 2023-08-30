@@ -1,15 +1,17 @@
 {
+    "name": "Back-End",
     "version": 2,
+    "public": true,
     "builds": [
         {
-            "src": "src/app.js",
-            "use": "@verse/node"
+            "src": "app.js",
+            "use": "@vercel/node"
         }
     ],
     "routes": [
         {
-            "src": "(.*)",
-            "dest":"src/app.js"
+            "src": "/(.*)",
+            "dest":"app.js"
         }
     ]
 }
